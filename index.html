@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#12070d">
+  <meta name="description" content="Uma pequena história de amor, feita para uma pessoa especial.">
+  <title>Para o meu amor ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="loader-heart">♡</div>
+    <div class="loader-line"><span></span></div>
+    <p>preparando uma surpresa...</p>
+  </div>
+
+  <div class="grain"></div>
+  <div id="stars"></div>
+  <div id="petals"></div>
+  <div class="cursor-glow"></div>
+
+  <audio id="backgroundMusic" loop preload="auto">
+    <source src="musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="soundBtn" class="sound-btn" aria-label="Ativar música">
+    <span class="sound-icon">♪</span><span class="sound-label">som</span>
+  </button>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-orbit orbit-a"></div>
+      <div class="hero-orbit orbit-b"></div>
+      <nav class="nav">
+        <span class="nav-mark">M + ♡</span>
+        <div class="nav-links">
+          <a href="#memorias">memórias</a>
+          <a href="#carta">carta</a>
+          <a href="#futuro">futuro</a>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <p class="eyebrow reveal">uma história que eu escolheria viver de novo</p>
+        <h1 class="hero-title reveal delay-1">Para o meu <em>amor</em><span>♡</span></h1>
+        <p class="hero-sub reveal delay-2">Entre todas as possibilidades da vida,<br>eu gosto da que tem você.</p>
+        <button id="enterBtn" class="enter-btn reveal delay-3">
+          <span>entrar na nossa história</span><b>↓</b>
+        </button>
+      </div>
+
+      <div class="hero-photo-wrap reveal delay-2">
+        <div class="hero-photo-shadow"></div>
+        <img class="hero-photo" src="foto-1.jpeg" alt="Um momento nosso" loading="eager">
+        <span class="photo-note">um dos meus lugares favoritos</span>
+      </div>
+
+      <div class="scroll-hint">deslize <span>↓</span></div>
+    </section>
+
+    <section class="intro section" id="memorias">
+      <div class="section-kicker">01 — nós</div>
+      <div class="intro-grid">
+        <div>
+          <h2>Algumas pessoas<br><em>acontecem.</em></h2>
+        </div>
+        <div class="intro-copy">
+          <p>Outras chegam devagar e, quando a gente percebe, já estão misturadas aos nossos dias, aos nossos planos e à nossa forma de enxergar o mundo.</p>
+          <p class="soft">Essa é uma pequena experiência feita para você. Toque, explore e deixe a música acompanhar cada lembrança.</p>
+          <button id="surpriseBtn" class="text-btn">tem uma surpresa aqui <span>✦</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">02 — memórias</div>
+          <h2>Momentos que eu<br><em>guardei em mim.</em></h2>
+        </div>
+        <p>Toque em qualquer foto para vê-la de perto.</p>
+      </div>
+
+      <div class="memory-grid">
+        <figure class="memory-card card-1" data-photo="foto-1.jpeg" data-caption="Você e eu, do nosso jeito.">
+          <img src="foto-1.jpeg" alt="Momento nosso" loading="lazy">
+          <figcaption><span>01</span> do nosso jeito</figcaption>
+        </figure>
+        <figure class="memory-card card-2" data-photo="foto-2.jpeg" data-caption="Tão perto que o mundo parece desaparecer.">
+          <img src="foto-2.jpeg" alt="Momento romântico" loading="lazy">
+          <figcaption><span>02</span> tão perto</figcaption>
+        </figure>
+        <figure class="memory-card card-3" data-photo="foto-3.jpeg" data-caption="Tem dias que viram lembrança sem pedir licença.">
+          <img src="foto-3.jpeg" alt="Momento nosso" loading="lazy">
+          <figcaption><span>03</span> um dia bonito</figcaption>
+        </figure>
+        <figure class="memory-card card-4" data-photo="foto-4.jpeg" data-caption="O tipo de detalhe que eu gosto de lembrar.">
+          <img src="foto-4.jpeg" alt="Momento nosso" loading="lazy">
+          <figcaption><span>04</span> detalhe favorito</figcaption>
+        </figure>
+        <figure class="memory-card card-5" data-photo="foto-5.jpeg" data-caption="Um beijo, um sorriso e mais uma memória nossa.">
+          <img src="foto-5.jpeg" alt="Momento nosso" loading="lazy">
+          <figcaption><span>05</span> mais uma</figcaption>
+        </figure>
+        <figure class="memory-card card-6" data-photo="foto-6.jpeg" data-caption="Eu gosto da nossa versão simples.">
+          <img src="foto-6.jpeg" alt="Momento nosso" loading="lazy">
+          <figcaption><span>06</span> nossa versão</figcaption>
+        </figure>
+        <figure class="memory-card card-7" data-photo="foto-7.jpeg" data-caption="E ainda tem tanta história para viver.">
+          <img src="foto-7.jpeg" alt="Momento nosso" loading="lazy">
+          <figcaption><span>07</span> ainda tem mais</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="reasons section">
+      <div class="section-kicker">03 — pequenos motivos</div>
+      <div class="reasons-layout">
+        <div>
+          <h2>Se eu tentasse<br>contar <em>todos...</em></h2>
+          <p>provavelmente precisaria de outra vida.</p>
+        </div>
+        <div class="reason-wheel" id="reasonWheel" aria-label="Clique para descobrir um motivo">
+          <div class="wheel-center">♡<small>toque</small></div>
+          <span class="reason-chip r1">seu sorriso</span>
+          <span class="reason-chip r2">seu jeito</span>
+          <span class="reason-chip r3">suas manias</span>
+          <span class="reason-chip r4">seu abraço</span>
+          <span class="reason-chip r5">seu olhar</span>
+          <span class="reason-chip r6">sua presença</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="constellation section" id="constelacao">
+      <div class="section-kicker">04 — universo</div>
+      <div class="constellation-copy">
+        <p class="mini">Se o céu pudesse guardar uma história...</p>
+        <h2>eu desenharia<br><em>você aqui.</em></h2>
+        <p>As estrelas abaixo formam um pequeno céu interativo. Passe o dedo ou o mouse e descubra frases escondidas.</p>
+      </div>
+      <div id="constellation" class="sky">
+        <div class="constellation-line l1"></div>
+        <div class="constellation-line l2"></div>
+        <div class="constellation-line l3"></div>
+        <span class="sky-word">você</span>
+      </div>
+    </section>
+
+    <section class="letter-section section" id="carta">
+      <div class="letter-intro">
+        <div class="section-kicker">05 — uma carta</div>
+        <h2>Agora, leia<br><em>com calma.</em></h2>
+        <p>Sem pressa. Como quem fica mais alguns minutos porque ainda não quer ir embora.</p>
+      </div>
+      <article class="letter-card">
+        <div class="letter-top">
+          <span>para você</span>
+          <span id="letterProgress">0%</span>
+        </div>
+        <div id="letter" class="letter-text"></div>
+        <div class="letter-sign">com todo o meu amor <span>♡</span></div>
+      </article>
+    </section>
+
+    <section class="future section" id="futuro">
+      <div class="future-glow"></div>
+      <div class="section-kicker">06 — daqui para frente</div>
+      <h2>A melhor parte<br><em>ainda não aconteceu.</em></h2>
+      <div class="future-grid">
+        <div class="future-item"><span>01</span><b>lugares</b><p>que ainda vamos conhecer.</p></div>
+        <div class="future-item"><span>02</span><b>fotografias</b><p>que ainda vamos tirar.</p></div>
+        <div class="future-item"><span>03</span><b>histórias</b><p>que ainda vamos contar.</p></div>
+        <div class="future-item"><span>04</span><b>dias</b><p>que ainda vão virar memória.</p></div>
+      </div>
+    </section>
+
+    <section class="finale section">
+      <div class="finale-heart">♡</div>
+      <p class="eyebrow">e se você chegou até aqui...</p>
+      <h2>fica mais um<br><em>pouquinho.</em></h2>
+      <p class="final-copy">Eu ainda escolheria você. Hoje, amanhã e em todas as pequenas versões do futuro que a gente ainda não conhece.</p>
+      <button id="replayBtn" class="enter-btn">recomeçar a história <b>↻</b></button>
+      <div class="final-sign">feito especialmente para você</div>
+    </section>
+  </main>
+
+  <div id="surpriseModal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="surprise"></div>
+    <div class="modal-box surprise-box">
+      <button class="modal-close" data-close="surprise">×</button>
+      <div class="modal-symbol">♡</div>
+      <p>uma coisa que eu queria te lembrar</p>
+      <h3>Você não precisa ser perfeita para ser profundamente amada.</h3>
+      <span>Eu gosto de você por inteiro.</span>
+    </div>
+  </div>
+
+  <div id="photoModal" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" data-close="photo">×</button>
+    <img id="lightboxImg" src="" alt="">
+    <div id="lightboxCaption"></div>
+  </div>
+
+  <div id="reasonModal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="reason"></div>
+    <div class="modal-box">
+      <button class="modal-close" data-close="reason">×</button>
+      <p>mais um motivo</p>
+      <h3 id="reasonText"></h3>
+      <span>e eu poderia continuar por horas.</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
